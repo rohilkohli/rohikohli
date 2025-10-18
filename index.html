@@ -3,17 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Rohil Kohli - Web Developer & UI/UX Designer</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Hello, I'm [Your Name] 👋</h1>
-    </header>
-    <section class="about">
-        <p>
-            I'm a passionate software developer and UI/UX designer. I enjoy creating user-friendly and visually appealing web applications. My skills include HTML, CSS, JavaScript, and more. Currently exploring new technologies to expand my knowledge.
-        </p>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">RK</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#stats">Stats</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Hi, I'm Rohil Kohli! 👋">Hi, I'm Rohil Kohli! 👋</h1>
+            <div class="typing-container">
+                <span class="typing-text"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-description">Passionate about creating visually stunning and user-friendly digital experiences</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="https://github.com/rohilkohli" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-github"></i> View Projects
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
     </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate <strong>web developer</strong> and <strong>UI/UX designer</strong> focused on creating visually stunning and user-friendly digital experiences. I love combining creativity with code to build engaging websites and applications.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me behind a camera lens capturing moments or editing photos!
+                    </p>
+                    <ul class="highlights">
+                        <li><i class="fas fa-check-circle"></i> Currently exploring modern web frameworks and design systems</li>
+                        <li><i class="fas fa-check-circle"></i> Love bringing ideas to life through clean code and beautiful design</li>
+                        <li><i class="fas fa-check-circle"></i> Goal: Build products that make a difference</li>
+                        <li><i class="fas fa-check-circle"></i> Always experimenting with new design trends and techniques</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="profile-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" style="--color: #E34F26;">HTML5</span>
+                        <span class="skill-tag" style="--color: #1572B6;">CSS3</span>
+                        <span class="skill-tag" style="--color: #F7DF1E;">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-pencil-ruler"></i> Design Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" style="--color: #F24E1E;">Figma</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" style="--color: #ED8B00;">Java</span>
+                        <span class="skill-tag" style="--color: #00599C;">C++</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Database</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" style="--color: #4479A1;">MySQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats">
+        <div class="container">
+            <h2 class="section-title">GitHub Stats</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <img src="https://github-readme-stats.vercel.app/api?username=rohilkohli&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats">
+                </div>
+                <div class="stat-card">
+                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=rohilkohli&theme=tokyonight&hide_border=true" alt="GitHub Streak">
+                </div>
+                <div class="stat-card full-width">
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rohilkohli&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Connect With Me</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/rohilkohli/" target="_blank" class="social-link linkedin">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://twitter.com/rohilkohli" target="_blank" class="social-link twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="https://github.com/rohilkohli" target="_blank" class="social-link github">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+            <div class="quote">
+                <i class="fas fa-quote-left"></i>
+                <p>"Design is not just what it looks like and feels like. Design is how it works."</p>
+                <span>- Steve Jobs</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>💼 Open to collaborating on interesting projects and opportunities!</p>
+            <p>⭐ From <a href="https://github.com/rohilkohli" target="_blank">rohilkohli</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
